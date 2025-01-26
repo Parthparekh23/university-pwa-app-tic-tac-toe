@@ -1,0 +1,71 @@
+/* General styles for the WelcomePage */
+.welcome-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/src/back.png'); /* Soft neutral background */
+    font-family: 'Geneva, Arial, Helvetica, sans-serif, sans-serif';
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Welcome content styling */
+  .welcome-content {
+    max-width: 500px; /* Adjusted width for better balance */
+    width: 100%;
+    padding: 40px 50px;
+    background: rgba(255, 253,208,1); /* Soft, semi-transparent white background */
+    border-radius: 16px; /* Smooth rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    backdrop-filter: blur(10px); /* Added blur for modern look */
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  .welcome-content:hover {
+    transform: scale(1.1); /* Slight zoom-in effect when hovered */
+  }
+  
+  .welcome-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #5c6bc0; /* Soft purple-blue color */
+    margin-bottom: 20px;
+    font-family: 'Geneva, Arial, Helvetica, sans-serif, sans-serif';
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .start-btn {
+    background-color: rgba(255, 219, 88, 1); /* Soft blue */
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(64, 105, 66);
+    border-radius: 30px; /* Rounded button */
+    cursor: pointer;
+    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .start-btn:hover {
+    background-color: #5f6bf1; /* Slightly darker blue on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+  }
+  
+  .start-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(123, 141, 255, 0.5); /* Soft outline on focus */
+  }
+  
+  /* Adding a fade-in effect for the welcome screen */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

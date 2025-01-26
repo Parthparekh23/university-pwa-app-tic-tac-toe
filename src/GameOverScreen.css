@@ -1,0 +1,61 @@
+.game-over-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  border-radius: 10%;
+  background-color: rgba(255, 253,208,1); /* Soft neutral background */
+  color: #333; /* Dark gray text for better readability */
+  font-family: 'Geneva, Arial, Helvetica, sans-serif, sans-serif';
+  
+}
+
+.game-over-screen .card {
+  background: rgba(255, 253,208,1);
+  padding: 40px 60px;
+  border-radius: 16px; /* Slightly rounded corners for a smooth look */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  max-width: 600px; /* Increased width for better balance */
+  width: 100%; /* Allowing the card to take up the available space */
+  text-align: center;
+  margin: 20px; /* Small margin to avoid sticking to edges */
+  transform: scale(1.05); /* Slight zoom effect to give it an elevated look */
+}
+
+.game-over-screen h2 {
+  font-size: 4rem;
+  color: #5c6bc0; /* Soft purple-blue */
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.game-over-screen h2 {
+  font-size: 2.0rem;
+  color: #d72828d1; /* Medium gray for better contrast */
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.game-over-screen button {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: rgba(255, 219, 88, 1);
+  color: rgb(64, 105, 66);
+  border: none;
+  border-radius: 30px; /* Rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.game-over-screen button:hover {
+  background-color: #5f6bf1; /* Slightly darker blue for hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.game-over-screen button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(123, 141, 255, 0.5); /* Soft outline on focus */
+}

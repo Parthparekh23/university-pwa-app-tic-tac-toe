@@ -1,0 +1,41 @@
+.game-status {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgb(30, 41, 59); 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .game-status h2 {
+    font-family: 'Geneva, Arial, Helvetica, sans-serif, sans-serif';
+    color: white;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .game-status button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .game-status button:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 600px) {
+    .game-status h2 {
+      font-size: 22px;
+      
+    }
+  
+    .game-status button {
+      font-size: 14px;
+    }
+  }
+  
