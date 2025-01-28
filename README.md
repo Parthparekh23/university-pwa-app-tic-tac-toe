@@ -22,7 +22,7 @@ Follow these steps to install and run the TicTacToe app:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/tictactoe.git
+   git clone https://github.com/Parthparekh23/university-pwa-app-tic-tac-toe.git
    cd tictactoe
 
 2. Install the dependencies:
@@ -36,7 +36,10 @@ Follow these steps to install and run the TicTacToe app:
 The app will open in your default browser at http://localhost:3000.  
 
 4. Test Offline Capabilities
-    Go to browser http://localhost:3000 then click right inspect then go to Application click offline Service Worker. 
+To test the offline capabilities of the Progressive Web App, follow these steps:
+
+Open the app in your browser.
+Turn off your internet connection.
 
 ## Contributing
 

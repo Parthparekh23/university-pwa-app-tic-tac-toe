@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Board } from "./components/Board";
 import { ResetButton } from "./components/ResetButton";
 import { ScoreBoard } from "./components/ScoreBoard";
@@ -23,6 +23,21 @@ const App = () => {
   const [scores, setScores] = useState({ xScore: 0, oScore: 0 });
   const [gameOver, setGameOver] = useState(false);
   const [winner, setWinner] = useState(null); // Track the winner
+  const [isOnline, setIsOnline] = useState(navigator.onLine); // Track online status
+
+  // Update online/offline status
+  useEffect(() => {
+    const handleOnline = () => setIsOnline(true);
+    const handleOffline = () => setIsOnline(false);
+
+    window.addEventListener("online", handleOnline);
+    window.addEventListener("offline", handleOffline);
+
+    return () => {
+      window.removeEventListener("online", handleOnline);
+      window.removeEventListener("offline", handleOffline);
+    };
+  }, []);
 
   const handleBoxClick = (boxIdx) => {
     if (gameOver || board[boxIdx]) return;
@@ -81,6 +96,11 @@ const App = () => {
 
   return (
     <div className="App">
+      {!isOnline && (
+        <div className="offline-notification">
+          You are offline. Some features may not be available.
+        </div>
+      )}
       {gameOver ? (
         // Show the Game Over screen when the game is over
         <GameOverScreen winner={winner} resetGame={resetBoard} />
