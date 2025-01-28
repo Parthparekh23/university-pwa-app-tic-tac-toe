@@ -22,7 +22,7 @@ Follow these steps to install and run the TicTacToe app:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/tictactoe.git
+   git clone https://github.com/Parthparekh23/university-pwa-app-tic-tac-toe.git
    cd tictactoe
 
 2. Install the dependencies:
